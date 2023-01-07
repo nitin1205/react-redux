@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 import produce from "immer";
+import './counterPage.css'
 
 const INCREMENT_COUNT = 'increment'; 
 const DECREMENT_COUNT = 'decrement'; 

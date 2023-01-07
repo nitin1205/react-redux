@@ -1,0 +1,49 @@
+/* body{
+  height: 100vh;
+  width: 100vw;
+  background: rgb(20,20,20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+} */
+
+.container {
+    background: purple;
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .counter {
+    height: 30vh;
+    width: 50vh;
+  }
+  
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  button{
+    height: 2rem;
+    width: 5rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input{
+    height: 2rem;
+    margin-left: 2rem;
+    border: none;
+  }
