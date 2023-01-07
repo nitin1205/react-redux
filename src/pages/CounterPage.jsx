@@ -1,41 +1,87 @@
-import { useState } from "react"
+import { useReducer } from "react";
 
-const counterPage = ({ initialCount }) => {
 
-    const [count, setCount] = useState(initialCount);
+const INCREMENT_COUNT = 'increment'; 
+const DECREMENT_COUNT = 'decrement'; 
+const SET_VALUE_TO_ADD = 'change_value_to_add'; 
+const ADD_VALUE_TO_COUNT = 'add_value_to_count'; 
 
-    const [valueToAdd, setValueToAdd] = useState(0);
+
+
+const reducer = (state, action) => {
+
+    switch(action.type) {
+        case INCREMENT_COUNT:
+            return {
+                ...state,
+                count: state.count + 1
+            };
+        case DECREMENT_COUNT:
+            return {
+                ...state,
+                count: state.count - 1
+            };
+        case SET_VALUE_TO_ADD:
+            return {
+                ...state,
+                valueToAdd: action.payload
+            };
+        case ADD_VALUE_TO_COUNT:
+            return {
+                ...state,
+                count: state.count + state.valueToAdd,
+                valueToAdd: 0
+            }
+        default:
+            return state;
+    }
+};
+
+const CounterPage = ({ initialCount }) => {
+
+    const [state, dispatch] = useReducer(reducer, {
+        count: initialCount,
+        valueToAdd: 0
+    });
 
     const increment = () => {
-        setCount(count + 1);
+        dispatch({
+            type: INCREMENT_COUNT,
+        });
     };
 
     const decrement = () => {
-        setCount(count - 1);
+        dispatch({
+            type: DECREMENT_COUNT,
+        });
     };
 
     const handleChange = (e) => {
         const value = parseInt(e.target.value) || 0;
-        setValueToAdd(value);
-    }
+        dispatch({
+            type: SET_VALUE_TO_ADD,
+            payload: value 
+        })
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        dispatch({
+            type: ADD_VALUE_TO_COUNT,
+        });
 
-        setCount(count + valueToAdd);
-        setValueToAdd(0);
-    }
+    };
 
   return (
     <div className="container">
         <div className="counter">
-            <h1>Count is {count}</h1>
+            <h1>Count is {state.count}</h1>
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>Decrement</button>
             <form className="form" onSubmit={handleSubmit}>
                 <input 
                 type="number"
-                value={valueToAdd || ""}
+                value={state.valueToAdd || ""}
                 onChange={handleChange}
                 />
                 <button>Add it!</button>
@@ -43,6 +89,6 @@ const counterPage = ({ initialCount }) => {
         </div>
     </div>
   );
-}
+};
 
-export default counterPage
+export default CounterPage;
