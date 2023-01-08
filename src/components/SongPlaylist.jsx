@@ -9,7 +9,7 @@ function SongPlaylist() {
 
   const dispatch = useDispatch(); 
   const songPlaylist = useSelector((state) => {
-    console.log(state);
+    // console.log(state);
     return state.songs;
   });
 
