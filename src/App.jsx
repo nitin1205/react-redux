@@ -2,7 +2,7 @@
 // import CounterPage from './pages/CounterPage'
 import { useDispatch, useSelector } from 'react-redux';
 
-import { resetMovie, resetSong } from './store';
+import { reset } from './store';
 import './App.css'
 import MoviePlaylist from "./components/MoviePlaylist";
 import SongPlaylist from "./components/SongPlaylist";
@@ -23,8 +23,7 @@ export default function App() {
   const dispatch = useDispatch();
 
   const handleResetClick = () => {
-    dispatch(resetMovie());
-    dispatch(resetSong());
+    dispatch(reset());
   };
 
   return (
