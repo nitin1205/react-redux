@@ -25,24 +25,63 @@
 // export { store, addSong, removeSong, addMovie, removeMovie, reset };
 
 
+// import { configureStore } from "@reduxjs/toolkit";
+
+// import { carsReducer, addCar, removeCar, changeSearchTerm } from "./slices/carsSlice";
+// import { formReducer, changeName, changeCost } from "./slices/fromSlice";
+
+
+// const store = configureStore({
+//     reducer: {
+//         cars: carsReducer,
+//         form: formReducer
+//     }
+// });
+
+// export {
+//     store,
+//     changeName,
+//     changeCost,
+//     addCar,
+//     removeCar,
+//     changeSearchTerm
+// };
+
+
+//  CRUD store
+
 import { configureStore } from "@reduxjs/toolkit";
 
-import { carsReducer, addCar, removeCar, changeSearchTerm } from "./slices/carsSlice";
-import { formReducer, changeName, changeCost } from "./slices/fromSlice";
+import { usersReducer } from "./slices/usersSlice";
 
 
 const store = configureStore({
     reducer: {
-        cars: carsReducer,
-        form: formReducer
+        users: usersReducer
     }
 });
 
-export {
-    store,
-    changeName,
-    changeCost,
-    addCar,
-    removeCar,
-    changeSearchTerm
-};
+export { store };
+export * from './thunks/fetchUsers';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
