@@ -3,7 +3,7 @@
 // import { useDispatch, useSelector } from 'react-redux';
 
 // import { reset } from './store';
-// import './App.css'
+import './App.css'
 // import MoviePlaylist from "./components/MoviePlaylist";
 // import SongPlaylist from "./components/SongPlaylist";
 
@@ -49,8 +49,8 @@ export default function App() {
   return(
     <div>
       <CarForm />
-      <CarList />
       <CarSearch />
+      <CarList />
       <CarValue />
     </div>
   );
