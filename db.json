@@ -1,10 +1,42 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Myra"
-        }
-    ],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Rene Schneider",
+      "id": 2
+    },
+    {
+      "name": "Mr. Violet Dare",
+      "id": 3
+    },
+    {
+      "name": "Mrs. Fernando Blanda",
+      "id": 4
+    },
+    {
+      "name": "Benjamin Renner",
+      "id": 5
+    },
+    {
+      "name": "Dr. Krista Fadel",
+      "id": 6
+    },
+    {
+      "name": "Regina Fay",
+      "id": 7
+    },
+    {
+      "name": "Dr. Alyssa Stamm",
+      "id": 8
+    },
+    {
+      "name": "Alicia Wehner",
+      "id": 9
+    }
+  ],
+  "albums": [],
+  "photos": []
 }

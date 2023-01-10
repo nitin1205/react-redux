@@ -27,6 +27,7 @@ function Skeleton({ times, className }) {
         .map((_, i) => {
         return ( 
         <div key={i} className={outerClassNames} >
+            loda
             <div className={innerClassNames} />
         </div>
         );
