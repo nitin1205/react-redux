@@ -8,7 +8,14 @@ const addUser = createAsyncThunk('users/add', async () => {
         name: faker.name.fullName()
     });
 
+    await pause(1000)
     return response.data;
 });
 
 export { addUser };
+
+const pause = (duration) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, duration);
+    });
+}
