@@ -1,60 +1,8 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
       "name": "Rene Schneider",
       "id": 2
-    },
-    {
-      "name": "Mr. Violet Dare",
-      "id": 3
-    },
-    {
-      "name": "Mrs. Fernando Blanda",
-      "id": 4
-    },
-    {
-      "name": "Benjamin Renner",
-      "id": 5
-    },
-    {
-      "name": "Dr. Krista Fadel",
-      "id": 6
-    },
-    {
-      "name": "Regina Fay",
-      "id": 7
-    },
-    {
-      "name": "Dr. Alyssa Stamm",
-      "id": 8
-    },
-    {
-      "name": "Alicia Wehner",
-      "id": 9
-    },
-    {
-      "name": "Patrick Krajcik MD",
-      "id": 10
-    },
-    {
-      "name": "Rita Keeling",
-      "id": 11
-    },
-    {
-      "name": "Jared Lind",
-      "id": 12
-    },
-    {
-      "name": "Kara Stiedemann",
-      "id": 13
-    },
-    {
-      "name": "Terri Monahan",
-      "id": 14
     },
     {
       "name": "Joanne Schinner",
@@ -63,6 +11,18 @@
     {
       "name": "Veronica Stanton",
       "id": 16
+    },
+    {
+      "name": "Miss Roy Konopelski I",
+      "id": 17
+    },
+    {
+      "name": "Miss Bernard Pagac",
+      "id": 18
+    },
+    {
+      "name": "Rodolfo Kemmer",
+      "id": 19
     }
   ],
   "albums": [],
