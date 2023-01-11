@@ -25,6 +25,37 @@
       "id": 19
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip",
+      "userId": 2
+    },
+    {
+      "userId": 2,
+      "title": "Sleek Cotton Chips",
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "title": "Generic Plastic Bike",
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "title": "Tasty Granite Mouse",
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "title": "Incredible Concrete Mouse",
+      "id": 14
+    },
+    {
+      "userId": 16,
+      "title": "Handcrafted Granite Towels",
+      "id": 15
+    }
+  ],
   "photos": []
 }
