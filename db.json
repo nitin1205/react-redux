@@ -52,7 +52,88 @@
       "userId": 4,
       "title": "Small Plastic Pants",
       "id": 9
+    },
+    {
+      "userId": 2,
+      "title": "Refined Bronze Chips",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "Gorgeous Wooden Chips",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Intelligent Plastic Fish",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Unbranded Fresh Bike",
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "title": "Recycled Plastic Bike",
+      "id": 14
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 6,
+      "url": "https://loremflickr.com/150/150/abstract?lock=45899",
+      "id": 1
+    },
+    {
+      "albumId": 6,
+      "url": "https://loremflickr.com/150/150/abstract?lock=69823",
+      "id": 2
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=91358",
+      "id": 3
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=9978",
+      "id": 4
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=18573",
+      "id": 5
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=79686",
+      "id": 6
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=34651",
+      "id": 7
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=71829",
+      "id": 8
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=22345",
+      "id": 9
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=60788",
+      "id": 10
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=86520",
+      "id": 11
+    }
+  ]
 }
